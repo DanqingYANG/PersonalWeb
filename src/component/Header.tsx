@@ -1,18 +1,21 @@
 import { Breadcrumb } from 'antd';
 import React, { FC } from 'react';
+import  './header.css';
 
 const Header: FC = () => (
-    <div className="App">
+    <div className="hd">
        <Breadcrumb>
-            <Breadcrumb.Item>Home</Breadcrumb.Item>
             <Breadcrumb.Item>
-                <a href="">Projects</a>
+                <a href="/home">Home</a>
             </Breadcrumb.Item>
             <Breadcrumb.Item>
-                <a href="">Blogs</a>
+                <a href="/projects">Projects</a>
             </Breadcrumb.Item>
             <Breadcrumb.Item>
-                About Danqing
+                <a href="/blogs">Blogs</a>
+            </Breadcrumb.Item>
+            <Breadcrumb.Item>
+                <a href="/about-danqing">About Danqing</a>
             </Breadcrumb.Item>
         </Breadcrumb>
     </div>
