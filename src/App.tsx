@@ -1,10 +1,13 @@
 import React, { FC } from 'react';
-import { Button } from 'antd';
+import { Breadcrumb, Button } from 'antd';
 import './App.less';
+import Header from './component/Header'
+import Blogs from './component/Blogs';
 
 const App: FC = () => (
   <div className="App">
-    <Button type="primary">Button</Button>
+    <Header></Header>
+    <Blogs></Blogs>
   </div>
 );
 
