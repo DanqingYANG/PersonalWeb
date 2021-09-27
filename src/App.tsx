@@ -10,7 +10,6 @@ import Projects from './Projects';
 const App: FC = () => (
   <div className="App">
     <Header></Header>
-    <Blogs></Blogs>
     <BrowserRouter>
       <Switch>
         <Route path="/" exact component={Home}/> 
