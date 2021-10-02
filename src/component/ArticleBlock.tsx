@@ -7,9 +7,8 @@ const text = `articlearticlearticlearticlearticlearticlearticlearticlearticle`;
 const ArticleBlock: FC = () => (
     <>
         <p>
-            <Article></Article>
-            {/* <ArticleList></ArticleList> */}
-            <a>end of article</a>
+            <a>...End of ArticleBlock</a>
+            <Article/>
         </p>
     </>
   );

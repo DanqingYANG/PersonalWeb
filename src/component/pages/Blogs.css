@@ -1,4 +1,4 @@
-h1{
+/* h1{
     font-family: futura-pt;
 }
 .blog-body{
@@ -6,14 +6,14 @@ h1{
     display: grid;
     /* grid-column: 1fr 1fr 1fr; */
     grid: auto-flow 1fr / 1fr 1000px 1fr;
-    justify-content: center;
-    align-content: center;
+    justify-content: left;
+    align-content: left;
 }
 
 .article{
     grid-column-start: 2;
     margin: 0 auto; 
-    vertical-align: middle;
+    vertical-align: left;
 }
 
 .pre-nxt-btn{
@@ -101,4 +101,4 @@ nav { grid-area: nav; }
 main { grid-area: main; }
 aside { grid-area: aside; }
 footer { grid-area: footer; }
- */
+ */ */
