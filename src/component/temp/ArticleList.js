@@ -1,9 +1,9 @@
 import React, {useState} from 'react'
 import { Link } from 'react-router-dom';
-import markdownFiles from './MarkdownFiles'
+import markdownFiles from '../blogs/MarkdownFiles'
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 import './ArticleList.css'
-import Article from './Article';
+import Article from '../blogs/Article';
 
 // function component, foreach
 const Articles = (props) => (

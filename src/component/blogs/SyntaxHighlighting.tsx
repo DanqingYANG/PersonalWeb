@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
 import ReactMarkdown from 'react-markdown'
-import rehypeHighlight from 'rehype-highlight'
+// import rehypeHighlight from 'rehype-highlight'
 import markdownFiles from './MarkdownFiles'
 
 export function SyntaxHightlighting()
@@ -17,6 +17,8 @@ export function SyntaxHightlighting()
     }, []);
 
     return (
-        <ReactMarkdown rehypePlugins={[rehypeHighlight]}>{content.md}</ReactMarkdown>
+        <>
+            {/* <ReactMarkdown rehypePlugins={[rehypeHighlight]}>{content.md}</ReactMarkdown> */}
+        </>
     );
 }

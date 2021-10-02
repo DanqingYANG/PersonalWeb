@@ -1,9 +1,13 @@
 import React, { useState, useEffect} from 'react'
 import ReactMarkdown from 'react-markdown'
 import gfm from 'remark-gfm'
-import AppMarkdown from './posts/image.md'
 import {Prism as SyntaxHighlighter} from 'react-syntax-highlighter'
 import {vs} from 'react-syntax-highlighter/dist/esm/styles/prism'
+
+// import ApMarkdown from './AppMarkdown'
+import AppMarkdown from '../../posts/image.md'
+
+// import rehypeHighlight from 'rehype-highlight'
 
  const Article = () => {
     const [a, seta] = useState({md: ''});
@@ -16,12 +20,13 @@ import {vs} from 'react-syntax-highlighter/dist/esm/styles/prism'
         }, 
         image: ImageBlock
     }
-
+    console.log(AppMarkdown.md);
     useEffect(() => {
       const handleSession = async () => {
         try {
           // Get the contents from the Markdown file and put them in the React state, so we can reference it in render() below.
           fetch(AppMarkdown).then(res => res.text()).then(text => seta({ md: text }));
+        
         } catch (error) {
           console.log("error", error);
         }
@@ -44,6 +49,7 @@ import {vs} from 'react-syntax-highlighter/dist/esm/styles/prism'
             transformImageUri={uri =>
             uri.startsWith("http") ? uri : `${process.env.REACT_IMAGE_BASE_URL}${uri}`
             }/>
+            {/* <ReactMarkdown rehypePlugins={[rehypeHighlight]}>{a.md}</ReactMarkdown>, */}
         </>
     );
 }

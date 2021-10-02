@@ -1,11 +1,11 @@
 import React, { FC } from 'react';
 import './App.less';
-import Header from './component/Header';
-import Blogs from './component/Blogs';
 import {BrowserRouter, Switch, Route} from 'react-router-dom';
-import AboutMe from './AboutMe';
-import Home from './Home';
-import Projects from './Projects';
+import Blogs from './component/blogs/Blogs';
+import AboutMe from './component/about_danqing/AboutMe';
+import Home from './component/home/Home';
+import Projects from './component/projects/Projects';
+import Header from './component/header/Header';
 
 const App: FC = () => (
   <div className="App">

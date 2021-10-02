@@ -1,8 +1,6 @@
-import React, { FC } from 'react';
-import { Collapse, Row, Col } from 'antd';
-import Article from '../component/pages/Article';
+import { FC } from 'react';
+import { Row, Col } from 'antd';
 import ArticleBlock from './ArticleBlock';
-const { Panel } = Collapse;
 
 function callback(key:string) {
   console.log(key);

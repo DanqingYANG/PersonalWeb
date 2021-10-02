@@ -1,5 +1,5 @@
 import React from 'react'
-import Article from './Article'
+// import Article from './Article'
 // import Articles from './Articles'
 // import '../../App.css'
 import './Blogs.css'
